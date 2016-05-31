@@ -1,5 +1,7 @@
 # Oenomaus - An Unofficial API for Airbnb
 
+[![npm version](https://badge.fury.io/js/oenomaus.svg)](https://badge.fury.io/js/oenomaus)
+
 ## Overview
 This Library wraps calls to Airbnb's API endpoints using v2 where possible (`HostAPI` mainly uses v2 for CRUD).
 
