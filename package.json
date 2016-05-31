@@ -15,11 +15,11 @@
     "url": "https://github.com/kayla-tech/oenomaus.git"
   },
   "tags": [
-    "airbnb",
+    "airbnb"
   ],
   "keywords": [
     "airbnb",
-    "api",
+    "api"
   ],
   "devDependencies": {
     "babel-cli": "^6.9.0",
