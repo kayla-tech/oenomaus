@@ -10,6 +10,20 @@ There are three main API classes:
 
 All methods return a `Promise<Object>`.
 
+## Install
+```bash
+npm i oenomaus -S
+```
+
+### Usage
+```javascript
+import { PublicAPI, UserAPI, HostAPI  } from 'oenomaus';
+
+const publicApi = new PublicAPI();
+const userApi = new UserAPI(access_token);
+const hostApi = new PublicAPI(access_token);
+```
+
 ## Authorization
 
 ```javascript
@@ -38,6 +52,8 @@ api.createListing({
 ```
 
 `UserAPI` and `HostAPI` both require the `access_token` to be passed to the constructor.
+
+**NOTE:** API will return an `APIError` if you request authorization too often (as it's throttled by Airbnb); best to cache the `access_token`;
 
 ## Methods
 
@@ -70,8 +86,6 @@ console.log(RoomTypes.ENTIRE_HOME.vale);
 // entire_home
 console.log(CommonAmenities.ESSENTIALS.value);
 // 40
-
-
 ```
 
 ## Why Oenomaus?
