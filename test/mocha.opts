@@ -1,0 +1,5 @@
+--compilers js:babel-register
+--reporter spec
+--require babel-polyfill
+--require dotenv/config
+--require test/common/node
